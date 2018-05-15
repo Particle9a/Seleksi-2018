@@ -1,10 +1,3 @@
-<h1 align="center">
-  <br>
-  Tugas 1 Seleksi Warga Basdat 2018
-  <br>
-  <br>
-</h1>
-
 <h2 align="center">
   <br>
   Data Scraping
@@ -12,6 +5,23 @@
   <br>
 </h2>
 
+
+<h1 align="center">
+  <br>
+  Description
+  <br>
+  <br>
+</h1>
+Program ini adalah program untuk melakukan data scraping terhadap website IMDB yang akan mengambil 1000 data berisi Judul, Rating, deskripsi singkat, list genre yang dimiliki oleh film, list pemeran film yang terdiri dari nama aktor dan karakter yang dimainkan dan tahun keluar film itu sendiri
+
+
+
+<h1 align="center">
+  <br>
+  Spesification
+  <br>
+  <br>
+</h1>
 
 ### Specifications
 
@@ -68,16 +78,62 @@ Preprocessing contohnya :
 - Author
 ```
 
+
 <h1 align="center">
   <br>
-  Selamat BerEksplorasi!
+  How To Use
   <br>
   <br>
 </h1>
 
-<p align="center">
+1. Masuk ke Directory 
+2. Jalankan Program dengan menuliskan python src/data_scraping.py
+3. Tunggu hingga semua data berhasil diambil, program akan mengambil 1000 data
+4. Hasil pencarian akan ditemukan di folder data.json
+
+<h1 align="center">
   <br>
-  Basdat Industries - Lab Basdat 2018
+  JSON Structure
   <br>
   <br>
-</p>
+</h1>
+
+movie['title'] -> Judul dari Film (String)
+movie['rating'] -> Rating dari Film (Float)
+movie['description'] -> Deskripsi singkat Film (String)
+movie['genre'] -> List of Genre (List of String)
+movie['poster'] -> Link Ke Poster Film (String)
+movie['casts'] -> List Pemeran pada Film (List of Cast)
+movie['casts'][i]['actor'] -> Nama Pemeran (String)
+movie['casts'][i]['character'] -> Nama Karakter yang dimainkan (String)
+movie['year'] -> Tahun keluar Film (String)
+
+<h1 align="center">
+  <br>
+  Screenshot
+  <br>
+  <br>
+</h1>
+
+![Picture 1](./screenshot/screenshot(178))
+![Picture 2](./screenshot/screenshot(179))
+![Picture 3](./screenshot/screenshot(180))
+
+<h1 align="center">
+  <br>
+  Reference
+  <br>
+  <br>
+</h1>
+Library yang digunakan adalah Library Beautifulsoup4 pada Python 3
+
+
+<h1 align="center">
+  <br>
+  Author
+  <br>
+  <br>
+</h1>
+Nama : Muhammad Aufa Helfiandri
+
+Teknik Informatika ITB 2016
